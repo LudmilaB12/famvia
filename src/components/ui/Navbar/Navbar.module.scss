@@ -16,7 +16,7 @@
 
     .navbarLinks {
         display: flex;
-        gap: 3rem; // More space between items, as in the image
+        gap: 3rem; 
         list-style: none;
         align-items: center;
         margin: 0;
@@ -32,7 +32,7 @@
                 background: none;
                 border: none;
                 color: $color-primary;
-                font-size: 1.2rem;
+                font-size: 16px;
                 font-family: inherit;
                 cursor: pointer;
                 text-decoration: none;
@@ -74,7 +74,7 @@
                 display: flex;
                 align-items: center;
                 gap: 0.3rem;
-                font-size: 1.2rem;
+                font-size: 16px;
                 color: $color-primary;
                 background: none;
                 border: none;
@@ -137,7 +137,6 @@
                         transition: background 0.18s, color 0.18s;
 
                         &:hover, &:focus {
-                            background: #f3f5ff;
                             color: $color-primary;
                         }
                     }

@@ -1,0 +1,91 @@
+@import '../../../styles/variables';
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-xs;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 #1a1c4c0f;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s ease, height 0.6s ease;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        width: 300px; // Valor grande para asegurar que cubre todo el botón
+        height: 300px;
+    }
+
+    // Variante solid (como Visit VacationLab)
+    &.solid {
+        background-color: $color-primary;
+        color: $color-bg;
+        border: none;
+
+        &::before {
+            background-color: rgba(82, 156, 248, 0.3); // Color azul celeste claro
+        }
+
+        &:hover {
+            // Removemos el transform anterior
+            background-color: $color-primary; // Mantenemos el color base
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Variante border 
+    &.border {
+        background-color: transparent;
+        color: $color-primary;
+        border: 0.5px solid $blue-300;
+
+        &::before {
+            background-color: rgba($color-primary, 0.1); // Versión más clara del color primario
+        }
+
+        &:hover {
+            // Removemos el transform anterior
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Estilos para el icono
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    // Si el icono está a la derecha
+    &.iconRight {
+        flex-direction: row-reverse;
+    }
+}

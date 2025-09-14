@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, UserRound } from "lucide-react";
+import Button from "@/src/components/ui/Button/Button"
 
 const Navbar = () => {
     const [dropdown1, setDropdown1] = useState(false);
@@ -90,6 +91,12 @@ const Navbar = () => {
                     )}
                 </li>
             </ul>
+            <Button 
+    text="LogIn" 
+    variant="border" 
+    icon={UserRound} 
+    iconPosition="right" 
+/>
         </nav>
     );
 };
