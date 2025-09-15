@@ -1,0 +1,101 @@
+@import '../../../styles/variables';
+
+.searchContainer {
+    position: relative;
+    margin-bottom: 12px;
+    
+    .searchIcon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        pointer-events: none;
+    }
+    
+    .searchInput {
+        width: 80%;
+        padding: 6px 10px 6px 36px;
+        border: 1px solid #e5e7eb;
+        border-radius: 100px;
+        font-size: 14px;
+        background: #f9fafb;
+        
+        &::placeholder {
+            color: #9ca3af;
+        }
+        
+        &:focus {
+            outline: none;
+            border-color: var(--checkbox-color);
+            box-shadow: 0 0 0 2px rgba(var(--checkbox-color), 0.1);
+        }
+    }
+}
+
+.checkboxList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    
+}
+
+.checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        color: $color-text;
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 2px solid #d1d5db;
+            cursor: pointer;
+            appearance: none;
+            position: relative;
+            background-color: white;
+            transition: all 0.2s ease;
+
+            &:checked {
+                background-color: var(--checkbox-color);
+                border-color: var(--checkbox-color);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 4px;
+                    top: 1px;
+                    width: 5px;
+                    height: 9px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+
+            &:hover {
+                border-color: var(--checkbox-color);
+            }
+        }
+    }
+
+.seeMoreButton {
+    background: none;
+    border: none;
+    color: var(--checkbox-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 0;
+    cursor: pointer;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    
+    &:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+}
