@@ -10,6 +10,7 @@ $color-shadow: rgba(35, 44, 106, 0.10);
 // Otros colores    
 $blue-300: #a3bcfe;
 $blue-950: #1a1c4c;
+$blue-link: #3b82f6;
 
 // Tipografía
 $font-family-base: var(--font-figtree), sans-serif;
@@ -33,17 +34,14 @@ $border-radius-sm: 8px;
 // Sombras
 $box-shadow-navbar: 0 2px 8px rgba(0,0,0,0.05);
 $box-shadow-dropdown: 0 4px 24px $color-shadow;
+$box-shadow-container: 0 4px 24px rgba(0, 0, 0, 0.06);
 
 // Z-index
 $z-navbar: 100;
 $z-dropdown: 200;
 
-$box-shadow-container: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);// Sombra para contenedores$category-park: #ff9dd2;$category-cruise: #0EA5E9;$category-beach: #ebc504;$category-location: #ef6621;// Colores de categorías
 // Colores de categorías
 $category-location: #ef6621;
 $category-beach: #ebc504;
 $category-cruise: #0EA5E9;
 $category-park: #ff9dd2;
-
-// Sombra para contenedores
-$box-shadow-container: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);

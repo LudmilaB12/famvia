@@ -85,14 +85,19 @@
 .seeMoreButton {
     background: none;
     border: none;
-    color: var(--checkbox-color);
+    color: $blue-link;
     font-size: 14px;
     font-weight: 500;
-    padding: 4px 0;
     cursor: pointer;
-    margin-top: 8px;
     text-decoration: none;
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    width: 100%;
+    margin-top: 4px;
+
     
     &:hover {
         text-decoration: underline;

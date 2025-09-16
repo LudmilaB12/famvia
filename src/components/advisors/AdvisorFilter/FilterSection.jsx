@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Search } from 'lucide-react';
+import { Search, ChevronDown } from 'lucide-react';
 import styles from './FilterSection.module.scss';
 
 const ITEMS_TO_SHOW = 6;
@@ -24,9 +24,7 @@ const FilterSection = ({
     const hasMore = filteredOptions.length > ITEMS_TO_SHOW;
 
     const handleOptionChange = (optionId) => {
-        // Resetea la búsqueda y el estado de "ver más"
         setSearchTerm('');
-        // Llama al onChange original
         onChange(optionId);
     };
 
@@ -50,7 +48,9 @@ const FilterSection = ({
                     <label 
                         key={option.id}
                         className={styles.checkbox}
-                        style={{ '--checkbox-color': color }}
+                        style={{ 
+                            '--checkbox-color': color
+                        }}
                     >
                         <input
                             type="checkbox"
@@ -67,6 +67,7 @@ const FilterSection = ({
                     onClick={() => setShowAll(true)}
                 >
                     See more
+                    <ChevronDown size={16} />
                 </button>
             )}
         </section>

@@ -1,13 +1,84 @@
 @import '../../../styles/variables';
 
-.selectedFilters {
+.selectedFiltersContainer {
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 8px;
-    padding: 16px;
+}
+
+.selectedFilters {
+    width: 100%;
     background-color: $color-bg;
-    border-radius: $border-radius-sm;
+    border-radius: $border-radius;
     box-shadow: $box-shadow-container;
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .pillsContainer {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-height: 56px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    &.expanded .pillsContainer {
+        max-height: none;
+    }
+}
+
+.noFilters {
+    color: $color-text-light;
+    font-size: $font-size-base;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.resetBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    color: $color-text;
+    font-size: $font-size-base;
+    cursor: pointer;
+    border-radius: $border-radius-sm;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+
+    &:hover:not(:disabled) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+}
+
+.morePill {
+    background-color: $color-secondary !important;
+    color: $color-text !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: darken($color-secondary, 5%) !important;
+    }
 }
 
 .pill {
@@ -18,9 +89,18 @@
     border-radius: 100px;
     font-size: $font-size-base;
     font-weight: $font-weight-medium;
-    background-color: var(--accent-color-light);
-    color: var(--accent-color);
-    
+
+    &.morePill {
+        background-color: $color-secondary !important;
+        color: $color-text !important;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: darken($color-secondary, 5%) !important;
+        }
+    }
+
     .removeBtn {
         display: inline-flex;
         align-items: center;
