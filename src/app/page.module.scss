@@ -49,3 +49,13 @@
 .content {
   flex: 1;
 }
+
+.advisorsGrid {
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 16px;
+
+}
