@@ -65,7 +65,10 @@ export const CATEGORIES_CONFIG = {
         color: '#ff9dd2',
         options: [
             { id: 'park1', label: 'Disney World' },
-            { id: 'park2', label: 'Universal Studios' },
+            { id: 'park2', label: 'Disneyland' },
+            { id: 'park3', label: 'LEGOLAND' },
+            { id: 'park4', label: 'Universal Hollywood' },
+            { id: 'park5', label: 'Universal Orlando' },
         ]
     }
 };

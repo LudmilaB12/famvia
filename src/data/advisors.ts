@@ -17,12 +17,12 @@ export const advisors: Advisor[] = [
         specialties: [
             {
                 category: 'themeParks',
-                destinations: ['Walt Disney World', 'Universal Orlando', 'Disneyland California'],
+                destinations: ['Disney World', 'Universal Orlando', 'Universal Hollywood'],
                 experienceYears: 8
             },
             {
                 category: 'beachResorts',
-                destinations: ['Caribbean', 'Hawaii'],
+                destinations: ['Beaches Resorts', 'Hawaii Vacations'],
                 experienceYears: 5
             }
         ],
@@ -73,18 +73,18 @@ export const advisors: Advisor[] = [
             city: 'Vancouver'
         },
         image: {
-            url: '/images/advisors/michael-chen.jpg',
+            url: '/images/advisors/michael-chen.jpeg',
             alt: 'Michael Chen - Travel Advisor'
         },
         specialties: [
             {
                 category: 'cruises',
-                destinations: ['Alaska', 'Pacific Coast', 'Caribbean'],
+                destinations: ['Norwegian Cruise Line', 'Royal Caribbean International', 'Celebrity Cruise Line'],
                 experienceYears: 10
             },
             {
                 category: 'beachResorts',
-                destinations: ['Maldives', 'Bali', 'Thailand'],
+                destinations: ['Maldives Resorts', 'Sandals Resorts', 'Elite Islands Resorts'],
                 experienceYears: 6
             }
         ],
@@ -135,18 +135,18 @@ export const advisors: Advisor[] = [
             city: 'Zurich'
         },
         image: {
-            url: '/images/advisors/emma-schmidt.jpg',
+            url: '/images/advisors/emma-schmidt.jpeg',
             alt: 'Emma Schmidt - Travel Advisor'
         },
         specialties: [
             {
                 category: 'themeParks',
-                destinations: ['Disneyland Paris', 'Europa Park', 'PortAventura World'],
+                destinations: ['Disneyland', 'LEGOLAND', 'Universal Hollywood'],
                 experienceYears: 5
             },
             {
                 category: 'cruises',
-                destinations: ['Mediterranean', 'Northern Europe', 'River Cruises'],
+                destinations: ['Viking Cruises', 'A-ROSA River Cruises', 'AMA Waterways'],
                 experienceYears: 7
             }
         ],
@@ -203,12 +203,12 @@ export const advisors: Advisor[] = [
         specialties: [
             {
                 category: 'beachResorts',
-                destinations: ['Great Barrier Reef', 'Gold Coast', 'Fiji', 'Bora Bora'],
+                destinations: ['Disney Aulani', 'Beaches Resorts', 'Hawaii Vacations'],
                 experienceYears: 9
             },
             {
                 category: 'cruises',
-                destinations: ['South Pacific', 'New Zealand', 'Australian Coast'],
+                destinations: ['Disney Cruise Line', 'Princess Cruises', 'MSC Cruises'],
                 experienceYears: 6
             }
         ],
@@ -265,12 +265,12 @@ export const advisors: Advisor[] = [
         specialties: [
             {
                 category: 'themeParks',
-                destinations: ['Disneyland California', 'Universal Studios Hollywood', 'Six Flags'],
+                destinations: ['Disney World', 'Universal Orlando', 'Universal Hollywood'],
                 experienceYears: 7
             },
             {
                 category: 'beachResorts',
-                destinations: ['Mexico', 'California Coast', 'Hawaii'],
+                destinations: ['Hawaii Vacations', 'Elite Islands Resorts', 'Sandals Resorts'],
                 experienceYears: 5
             }
         ],
