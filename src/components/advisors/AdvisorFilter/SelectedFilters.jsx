@@ -1,6 +1,5 @@
 'use client';
-import { useState, useRef, useEffect } from 'react';
-import { X, RotateCcw, MoreHorizontal } from 'lucide-react';
+import { X, RotateCcw } from 'lucide-react';
 import styles from './SelectedFilters.module.scss';
 
 const SelectedFilters = ({ 
@@ -9,10 +8,6 @@ const SelectedFilters = ({
     onRemove,
     onReset
 }) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [hasOverflow, setHasOverflow] = useState(false);
-    const containerRef = useRef(null);
-
     const getSelectedLabel = (categoryKey, optionId) => {
         const category = categories[categoryKey];
         const option = category.options.find(opt => opt.id === optionId);
@@ -28,37 +23,19 @@ const SelectedFilters = ({
 
     const hasSelectedFilters = Object.values(selectedFilters).some(filters => filters.length > 0);
 
-    useEffect(() => {
-        const checkOverflow = () => {
-            if (containerRef.current) {
-                const pillsContainer = containerRef.current.querySelector(`.${styles.pillsContainer}`);
-                if (pillsContainer) {
-                    const hasVerticalOverflow = pillsContainer.scrollHeight > pillsContainer.clientHeight;
-                    setHasOverflow(hasVerticalOverflow && !isExpanded);
-                }
-            }
-        };
-
-        checkOverflow();
-        window.addEventListener('resize', checkOverflow);
-        return () => window.removeEventListener('resize', checkOverflow);
-    }, [selectedFilters, isExpanded]);
-
     return (
-        <div 
-            ref={containerRef}
-            className={`${styles.selectedFilters} ${isExpanded ? styles.expanded : ''}`}
-        >
+        <div className={styles.selectedFilters}>
             <div className={styles.content}>
                 <div className={styles.pillsContainer}>
                     {!hasSelectedFilters ? (
                         <span className={styles.noFilters}>No filters selected</span>
                     ) : (
-                        <>
-                            {Object.entries(selectedFilters).map(([categoryKey, selected]) => (
-                                selected.length > 0 && selected.map(optionId => (
+                        Object.entries(selectedFilters).map(([categoryKey, selected]) => (
+                            selected.length > 0 && selected.map(optionId => {
+                                const pillKey = `${categoryKey}-${optionId}`;
+                                return (
                                     <span
-                                        key={`${categoryKey}-${optionId}`}
+                                        key={pillKey}
                                         className={styles.pill}
                                         style={{
                                             backgroundColor: hexToRgba(categories[categoryKey].color, 0.1),
@@ -73,17 +50,9 @@ const SelectedFilters = ({
                                             <X size={14} />
                                         </button>
                                     </span>
-                                ))
-                            ))}
-                            {hasOverflow && !isExpanded && (
-                                <button 
-                                    className={`${styles.pill} ${styles.morePill}`}
-                                    onClick={() => setIsExpanded(true)}
-                                >
-                                    <MoreHorizontal size={14} />
-                                </button>
-                            )}
-                        </>
+                                );
+                            })
+                        ))
                     )}
                 </div>
                 <button 
