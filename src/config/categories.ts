@@ -21,16 +21,43 @@ export const CATEGORIES_CONFIG = {
         title: 'Beach Resorts',
         color: '#ebc504ff',
         options: [
-            { id: 'beach1', label: 'Caribbean' },
-            { id: 'beach2', label: 'Mediterranean' },
+            { id: 'beach1', label: 'Beaches Resorts' },
+            { id: 'beach2', label: 'Disney Aulani' },
+            { id: 'beach3', label: 'Elite Islands Resorts' },
+            { id: 'beach4', label: 'Hawaii Vacations' },
+            { id: 'beach5', label: 'Maldives Resorts' },
+            { id: 'beach6', label: 'Sandals Resorts' }
         ]
     },
     cruises: {
         title: 'Cruises',
         color: '#0EA5E9',
         options: [
-            { id: 'cruise1', label: 'Caribbean Cruises' },
-            { id: 'cruise2', label: 'Mediterranean Cruises' },
+            { id: 'cruise1', label: 'A-ROSA River Cruises' },
+            { id: 'cruise2', label: 'AMA Waterways' },
+            { id: 'cruise3', label: 'American Cruise Line' },
+            { id: 'cruise4', label: 'Atlas Ocean Voyages' },
+            { id: 'cruise5', label: 'Avalon Waterways' },
+            { id: 'cruise6', label: 'Azamara Cruises' },
+            { id: 'cruise7', label: 'Carnival Cruise Line' },
+            { id: 'cruise8', label: 'Celebrity Cruise Line' },
+            { id: 'cruise9', label: 'Celestyal Cruises' },
+            { id: 'cruise10', label: 'Disney Cruise Line' },
+            { id: 'cruise11', label: 'Emerald Cruises' },
+            { id: 'cruise12', label: 'Explora Journeys' },
+            { id: 'cruise13', label: 'Holland America Line' },
+            { id: 'cruise14', label: 'MSC Cruises' },
+            { id: 'cruise15', label: 'Margaritaville at Sea' },
+            { id: 'cruise15', label: 'Norwegian Cruise Line' },
+            { id: 'cruise16', label: 'Princess Cruises' },
+            { id: 'cruise17', label: 'Royal Caribbean International' },
+            { id: 'cruise18', label: 'SeaWorld' },
+            { id: 'cruise19', label: 'Silversea Cruises' },
+            { id: 'cruise20', label: 'Spirit Cruise Line' },
+            { id: 'cruise21', label: 'Tauck' },
+            { id: 'cruise22', label: 'Viking Cruises' },
+            { id: 'cruise23', label: 'Virgin Voyages' }
+            
         ]
     },
     themeParks: {
