@@ -1,0 +1,238 @@
+@import '../../../styles/variables';
+
+.advisorProfile {
+    min-height: 100vh;
+    background-color: $color-secondary;
+}
+
+.contentWrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: $spacing-sm;
+    margin-top: -80px;
+    position: relative;
+}
+
+.leftColumn {
+    position: sticky;
+    height: fit-content;
+    margin-top: -3rem;
+}
+
+.profileCard {
+    border-radius: $border-radius;
+}
+
+.rightColumn {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+}
+
+.banner {
+    position: relative;
+    max-width: 1600px;
+    height: 400px;
+    overflow: hidden;
+    background-color: $color-bg;
+    border-radius: 16px;
+    margin: -0px auto 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+    }
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    transform: translateY(-80px);
+}
+
+.profileMain {
+    display: flex;
+    gap: $spacing-lg;
+    align-items: flex-start;
+    padding: 0 $spacing-md;
+}
+
+.profileImageContainer {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid $color-bg;
+    overflow: hidden;
+    box-shadow: $box-shadow-container;
+    position: relative;
+    z-index: 2;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileInfo {
+    flex-grow: 1;
+    color: $blue-950;
+    
+    .nameSection {
+        margin-bottom: $spacing-sm;
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: $font-weight-bold;
+            margin: 0 0 $spacing-xs;
+        }
+    }
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    color: $color-text-light;
+    font-size: 18px;
+
+    svg {
+        color: $color-text-light;
+    }
+}
+
+.bio {
+    font-size: $font-size-base;
+    color: $blue-950;
+    margin-bottom: $spacing-sm;
+    line-height: 1.5;
+}
+
+.socialLinks {
+    display: flex;
+    gap: $spacing-xs;
+    margin-bottom: $spacing-xs;
+}
+
+.socialButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $blue-300;
+    background: transparent;
+    color: $color-text-light;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: white;
+    }
+}
+
+.planButton {
+    padding: 12px 24px;
+    background-color: $sky-blue-300;
+    color: $blue-800;
+    border: none;
+    border-radius: $border-radius-full;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+    font-size: $font-size-lg;
+    transition: all 0.2s ease;
+    margin-bottom: $spacing-md;
+    margin-top: $spacing-sm;
+    box-shadow: $box-shadow-container;
+
+    &:hover {
+        background-color: darken($blue-300, 5%);
+        transform: translateY(-1px);
+    }
+}
+
+
+.bioDetails {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $spacing-sm;
+    background-color: $yellow-300;
+    border-radius: $border-radius;
+    background-image: url('/svg/deco3.svg');
+    background-size: contain;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.bioGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-md;
+}
+
+.bioCard {
+    background-color: $color-bg;
+    border-radius: $border-radius;
+    padding: $spacing-md;
+    box-shadow: $box-shadow-container;
+
+    h3 {
+        display: flex;
+        align-items: center;
+        gap: $spacing-xs;
+        color: $color-text;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacing-sm;
+
+        span {
+            font-size: 1.2em;
+        }
+    }
+
+    p {
+        color: $color-text-light;
+        line-height: 1.6;
+        font-size: $font-size-base;
+    }
+}
+
+.favoritesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+        color: $color-text-light;
+        padding: $spacing-xs 0;
+        font-size: $font-size-base;
+        display: flex;
+        align-items: center;
+        
+        &:before {
+            content: '•';
+            color: $color-primary;
+            margin-right: $spacing-xs;
+            font-size: 1.2em;
+        }
+    }
+}

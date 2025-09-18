@@ -10,8 +10,11 @@ $color-text-light: #7c7c7c;
 
 // Otros colores    
 $blue-300: #a3bcfe;
+$blue-800: #2d33a6;
 $blue-950: #1a1c4c;
 $blue-link: #3b82f6;
+$sky-blue-300: #5becff;
+$yellow-300: #fff443;
 
 // Tipografía
 $font-family-base: var(--font-figtree), sans-serif;
@@ -28,10 +31,12 @@ $spacing-xs: 0.5rem;
 $spacing-sm: 1rem;
 $spacing-md: 2rem;
 $spacing-lg: 3rem;
+$spacing-xl: 4rem;
 
 // Bordes y radios
 $border-radius: 16px;
 $border-radius-sm: 8px;
+$border-radius-full: 9999px;
 
 // Sombras
 $box-shadow-navbar: 0 2px 8px rgba(0,0,0,0.05);
