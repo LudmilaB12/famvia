@@ -113,23 +113,27 @@ export default function AdvisorPage({ params: { id } }: AdvisorPageProps) {
             </section>
 
             <section className={styles.favoriteMemory}>
-                <h2>Favorite Vacation Memory</h2>
                 <div className={styles.memoryCard}>
                     <img 
                         src={advisor.profile.favoriteVacationImage.url} 
                         alt={advisor.profile.favoriteVacationImage.alt}
                     />
-                    <p>{advisor.profile.favoriteVacationMemory}</p>
+                    <div className={styles.memoryContent}>
+                        <h2>My favorite Family Vacation Memory</h2>
+                        <p>{advisor.profile.favoriteVacationMemory}</p>
+                    </div>
                 </div>
             </section>
 
             <section className={styles.vacationMemories}>
-                <h2>Vacation Memories</h2>
+                <div className={styles.memoriesHeader}>
+                    <h2>My Vacation Memories <span role="img" aria-label="camera">📸</span></h2>
+                    <p>Click the pictures to zoom in</p>
+                </div>
                 <div className={styles.memoriesGrid}>
                     {advisor.profile.vacationMemories.map((memory, index) => (
                         <div key={index} className={styles.memoryCard}>
                             <img src={memory.url} alt={memory.alt} />
-                            {memory.description && <p>{memory.description}</p>}
                         </div>
                     ))}
                 </div>

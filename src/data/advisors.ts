@@ -39,24 +39,24 @@ export const advisors: Advisor[] = [
                 'Disneyland California'
             ],
             favoriteVacationImage: {
-                url: '/images/vacation-memories/sarah-disney-castle.jpg',
+                url: '/images/vacation-memories/sarah-disney-castle.jpeg',
                 alt: 'Sarah at Disney Castle during sunset',
                 description: 'Capturing the magic at Disney\'s Magic Kingdom during my favorite time of day - sunset behind Cinderella Castle.'
             },
             favoriteVacationMemory: 'My most cherished vacation memory was taking my niece to Disney World for the first time. Seeing her face light up when she met Cinderella, and the pure joy in her eyes during the fireworks show reminded me why I love what I do. It was a perfect day that ended with ice cream on Main Street while watching the night parade.',
             vacationMemories: [
                 {
-                    url: '/images/vacation-memories/sarah-caribbean-beach.jpg',
+                    url: '/images/vacation-memories/sarah-caribbean-beach.jpeg',
                     alt: 'Beautiful sunset at a Caribbean beach',
                     description: 'Exploring the pristine beaches of Turks and Caicos'
                 },
                 {
-                    url: '/images/vacation-memories/sarah-universal.jpg',
+                    url: '/images/vacation-memories/sarah-universal.jpeg',
                     alt: 'At Universal\'s Wizarding World',
                     description: 'Living the magic at The Wizarding World of Harry Potter'
                 },
                 {
-                    url: '/images/vacation-memories/sarah-cruise.jpg',
+                    url: '/images/vacation-memories/sarah-cruise.jpeg',
                     alt: 'Caribbean cruise experience',
                     description: 'Enjoying a sunset sail in the Caribbean'
                 }
@@ -101,24 +101,24 @@ export const advisors: Advisor[] = [
                 'Bali'
             ],
             favoriteVacationImage: {
-                url: '/images/vacation-memories/michael-alaska-cruise.jpg',
+                url: '/images/vacation-memories/michael-alaska-cruise.jpeg',
                 alt: 'Michael on an Alaska cruise with glaciers in background',
                 description: 'Witnessing the majesty of Glacier Bay National Park from the deck of a luxury cruise ship.'
             },
             favoriteVacationMemory: 'During my first Alaska cruise, we had an unexpected encounter with a pod of humpback whales during sunset. The captain stopped the ship, and we watched in awe as these magnificent creatures breached and played in the golden light. It was a moment that reminded me of the incredible experiences travel can bring.',
             vacationMemories: [
                 {
-                    url: '/images/vacation-memories/michael-maldives.jpg',
+                    url: '/images/vacation-memories/michael-maldives.jpeg',
                     alt: 'Overwater bungalow in Maldives',
                     description: 'Experiencing paradise in the Maldives'
                 },
                 {
-                    url: '/images/vacation-memories/michael-hong-kong.jpg',
+                    url: '/images/vacation-memories/michael-hong-kong.jpeg',
                     alt: 'Hong Kong harbor at night',
                     description: 'The magical Hong Kong skyline at night'
                 },
                 {
-                    url: '/images/vacation-memories/michael-bali-temple.jpg',
+                    url: '/images/vacation-memories/michael-bali-temple.jpeg',
                     alt: 'Ancient temple in Bali',
                     description: 'Exploring the spiritual side of Bali'
                 }
@@ -163,24 +163,24 @@ export const advisors: Advisor[] = [
                 'French Riviera'
             ],
             favoriteVacationImage: {
-                url: '/images/vacation-memories/emma-europa-park.jpg',
+                url: '/images/vacation-memories/emma-europa-park.jpeg',
                 alt: 'Emma at Europa Park\'s Silver Star coaster',
                 description: 'Conquering Europa Park\'s Silver Star coaster - still my favorite ride after all these years!'
             },
             favoriteVacationMemory: 'My most magical memory was organizing a surprise marriage proposal for a client on a Rhine River cruise. We arranged for the boat to stop at a medieval castle at sunset, with a local orchestra playing their favorite song. The look of pure joy and surprise on both their faces made me realize how special my job truly is.',
             vacationMemories: [
                 {
-                    url: '/images/vacation-memories/emma-disneyland-paris.jpg',
+                    url: '/images/vacation-memories/emma-disneyland-paris.jpeg',
                     alt: 'Disneyland Paris castle in winter',
                     description: 'The enchanting Disneyland Paris during the Christmas season'
                 },
                 {
-                    url: '/images/vacation-memories/emma-river-cruise.jpg',
+                    url: '/images/vacation-memories/emma-river-cruise.jpeg',
                     alt: 'Rhine River cruise through castles',
                     description: 'Cruising past historic castles on the Rhine'
                 },
                 {
-                    url: '/images/vacation-memories/emma-portaventura.jpg',
+                    url: '/images/vacation-memories/emma-portaventura.jpeg',
                     alt: 'PortAventura World adventure',
                     description: 'Exploring the thrills at PortAventura World'
                 }
@@ -197,7 +197,7 @@ export const advisors: Advisor[] = [
             city: 'Sydney'
         },
         image: {
-            url: '/images/advisors/isabella-martinez.jpg',
+            url: '/images/advisors/isabella-martinez.jpeg',
             alt: 'Isabella Martinez - Travel Advisor'
         },
         specialties: [
@@ -225,24 +225,24 @@ export const advisors: Advisor[] = [
                 'New Zealand'
             ],
             favoriteVacationImage: {
-                url: '/images/vacation-memories/isabella-great-barrier.jpg',
+                url: '/images/vacation-memories/isabella-great-barrier.jpeg',
                 alt: 'Isabella snorkeling at Great Barrier Reef',
                 description: 'My perfect day: snorkeling at the Great Barrier Reef, surrounded by vibrant coral and tropical fish.'
             },
             favoriteVacationMemory: 'During a trip to the remote Yasawa Islands in Fiji, I spent an evening with a local family who taught me traditional cooking methods and shared stories of their ancestors. We ended the night with song and dance under the stars. It was a powerful reminder of how travel can create genuine connections across cultures.',
             vacationMemories: [
                 {
-                    url: '/images/vacation-memories/isabella-fiji.jpg',
+                    url: '/images/vacation-memories/isabella-fiji.jpeg',
                     alt: 'Sunset in Fiji',
                     description: 'Magical sunset at a private island resort in Fiji'
                 },
                 {
-                    url: '/images/vacation-memories/isabella-bora-bora.jpg',
+                    url: '/images/vacation-memories/isabella-bora-bora.jpeg',
                     alt: 'Overwater bungalow in Bora Bora',
                     description: 'Living the dream in Bora Bora'
                 },
                 {
-                    url: '/images/vacation-memories/isabella-whitsundays.jpg',
+                    url: '/images/vacation-memories/isabella-whitsundays.jpeg',
                     alt: 'Sailing in the Whitsundays',
                     description: 'Sailing through the pristine Whitsunday Islands'
                 }
@@ -259,7 +259,7 @@ export const advisors: Advisor[] = [
             city: 'Los Angeles'
         },
         image: {
-            url: '/images/advisors/james-wilson.jpg',
+            url: '/images/advisors/james-wilson.jpeg',
             alt: 'James Wilson - Travel Advisor'
         },
         specialties: [
@@ -287,24 +287,24 @@ export const advisors: Advisor[] = [
                 'Catalina Island'
             ],
             favoriteVacationImage: {
-                url: '/images/vacation-memories/james-disney-california.jpg',
+                url: '/images/vacation-memories/james-disney-california.jpeg',
                 alt: 'James at Disney California Adventure',
                 description: 'Celebrating the sunset at Paradise Pier in Disney California Adventure.'
             },
             favoriteVacationMemory: 'I once arranged a multi-generational family reunion at Disneyland, with relatives coming from all over the country. Watching three generations experience the magic together, from grandparents to toddlers, was incredibly special. The grandmother told me it was the first time her entire family had been together in 15 years.',
             vacationMemories: [
                 {
-                    url: '/images/vacation-memories/james-universal.jpg',
+                    url: '/images/vacation-memories/james-universal.jpeg',
                     alt: 'Universal Studios Hollywood',
                     description: 'Behind the scenes at Universal Studios'
                 },
                 {
-                    url: '/images/vacation-memories/james-beach.jpg',
+                    url: '/images/vacation-memories/james-beach.jpeg',
                     alt: 'Sunset at Santa Monica',
                     description: 'Perfect evening at Santa Monica Beach'
                 },
                 {
-                    url: '/images/vacation-memories/james-catalina.jpg',
+                    url: '/images/vacation-memories/james-catalina.jpeg',
                     alt: 'Catalina Island adventure',
                     description: 'Exploring the beauty of Catalina Island'
                 }
