@@ -9,12 +9,11 @@ import { useAdvisors } from "@/src/hooks/useAdvisors";
 import { useState, useMemo } from "react";
 import { CATEGORIES_CONFIG } from '@/src/config/categories';
 import type { Advisor } from "@/src/types/advisor";
+import Loader from '../components/ui/Loader/Loader';
 
 export default function Home() {
-  // Obtener los advisors usando el hook
   const { advisors, isLoading, error } = useAdvisors();
 
-  // Estado para los filtros seleccionados
   const [selectedLocations, setSelectedLocations] = useState<string[]>([]);
   const [selectedBeachResorts, setSelectedBeachResorts] = useState<string[]>([]);
   const [selectedCruises, setSelectedCruises] = useState<string[]>([]);
@@ -27,7 +26,6 @@ export default function Home() {
     themeParks: selectedThemeParks
   };
 
-  // Obtener el label de una opción por su ID
   const getOptionLabelById = (category: string, optionId: string): string => {
     return CATEGORIES_CONFIG[category as keyof typeof CATEGORIES_CONFIG]?.options.find(
       opt => opt.id === optionId
@@ -130,7 +128,7 @@ export default function Home() {
               }}
             />
             
-            {isLoading && <div className={styles.loading}>Loading advisors...</div>}
+            {isLoading && <Loader />}
             
             {error && <div className={styles.error}>Error: {error.message}</div>}
             {!isLoading && !error && (
