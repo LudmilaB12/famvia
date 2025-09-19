@@ -66,7 +66,7 @@ export default function VacationForm() {
         <form id="vacation-form" onSubmit={handleSubmit(onSubmit)} className={styles.vacationForm}>
             <div className={styles.header}>
                 <h2>Let me help plan your next vacation! <span>✈️</span></h2>
-                <p>Fill out the form and I'll work with you to help make it happen</p>
+                <p>Fill out the form and I&apos;ll work with you to help make it happen</p>
             </div>
 
             <div className={styles.formSection}>

@@ -1,10 +1,8 @@
 'use client';
 import styles from "./page.module.scss";
-import Navbar from "@/src/components/ui/Navbar/Navbar"
 import FilterSidebar from "@/src/components/advisors/AdvisorFilter/FilterSidebar";
 import SelectedFilters from "@/src/components/advisors/AdvisorFilter/SelectedFilters";
 import { AdvisorCard } from "@/src/components/advisors/AdvisorCard/AdvisorCard";
-import Footer from "@/src/components/ui/Footer/Footer";
 import { useAdvisors } from "@/src/hooks/useAdvisors";
 import { useState, useMemo } from "react";
 import { CATEGORIES_CONFIG } from '@/src/config/categories';

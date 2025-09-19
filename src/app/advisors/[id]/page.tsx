@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import styles from "./page.module.scss";
 import { Facebook, Instagram, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import Loader from "@/src/components/ui/Loader/Loader";
 import VacationForm from "@/src/components/advisors/VacationForm/VacationForm";
 import AdvisorsList from "@/src/components/advisors/AdvisorsList/AdvisorsList";
@@ -34,10 +35,13 @@ export default function AdvisorPage({ params: { id } }: AdvisorPageProps) {
     <div>
     <div className={styles.advisorProfile}>
       <div className={styles.banner}>
-        <img
+        <Image
           src={advisor.profile.vacationMemories[0].url}
           alt="Profile banner"
           className={styles.bannerImage}
+          layout="responsive"
+          width={1200}
+          height={400}
         />
       </div>
       <div id="mainContent">
@@ -140,9 +144,12 @@ export default function AdvisorPage({ params: { id } }: AdvisorPageProps) {
 
             <section className={styles.favoriteMemory}>
               <div className={styles.memoryCard}>
-                <img
+                <Image
                   src={advisor.profile.favoriteVacationImage.url}
                   alt={advisor.profile.favoriteVacationImage.alt}
+                  layout="responsive"
+                  width={1200}
+                  height={400}
                 />
                 <div className={styles.memoryContent}>
                   <h2>My favorite Family Vacation Memory</h2>
@@ -164,7 +171,7 @@ export default function AdvisorPage({ params: { id } }: AdvisorPageProps) {
               <div className={styles.memoriesGrid}>
                 {advisor.profile.vacationMemories.map((memory, index) => (
                   <div key={index} className={styles.memoryCard}>
-                    <img src={memory.url} alt={memory.alt} />
+                    <Image src={memory.url} alt={memory.alt} layout="responsive" width={1200} height={400} />
                   </div>
                 ))}
               </div>

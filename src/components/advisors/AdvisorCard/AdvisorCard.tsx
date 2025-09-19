@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { Advisor, Specialty } from '@/src/types/advisor';
+import { Advisor } from '@/src/types/advisor';
 import styles from './AdvisorCard.module.scss';
 import { MapPin } from 'lucide-react';
 
@@ -12,7 +12,6 @@ interface AdvisorCardProps {
 type DestinationWithCategory = {
     destination: string;
     category: 'beachResorts' | 'cruises' | 'themeParks';
-    isHighlighted: boolean;
 };
 
 export const AdvisorCard: React.FC<AdvisorCardProps> = ({ advisor }) => {
@@ -44,9 +43,7 @@ export const AdvisorCard: React.FC<AdvisorCardProps> = ({ advisor }) => {
                     {destinations.map((item, index) => (
                         <span 
                             key={`${item.destination}-${index}`}
-                            className={`${styles.specialty} ${styles[item.category]} ${
-                                item.isHighlighted ? styles.highlighted : ''
-                            }`}
+                            className={`${styles.specialty} ${styles[item.category]}`}
                         >
                             {item.destination}
                         </span>
