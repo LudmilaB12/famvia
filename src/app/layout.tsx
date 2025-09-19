@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
+import Footer from "@/src/components/ui/Footer/Footer";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -21,8 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={figtree.variable} style={{ fontFamily: "var(--font-figtree), sans-serif" }}>
-        {children}
+      <body className={figtree.variable} style={{ 
+        fontFamily: "var(--font-figtree), sans-serif",
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        margin: 0
+      }}>
+        <main style={{ flex: '1 0 auto' }}>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,12 +1,16 @@
 @import '../styles/_variables.scss';
 
+.main {
+  min-height: 100vh;
+  height: fit-content;
+}
+
 .bgr {
   background-image: url('/svg/deco.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: top;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
 }
 
 .description {

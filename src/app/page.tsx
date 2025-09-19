@@ -4,6 +4,7 @@ import Navbar from "@/src/components/ui/Navbar/Navbar"
 import FilterSidebar from "@/src/components/advisors/AdvisorFilter/FilterSidebar";
 import SelectedFilters from "@/src/components/advisors/AdvisorFilter/SelectedFilters";
 import { AdvisorCard } from "@/src/components/advisors/AdvisorCard/AdvisorCard";
+import Footer from "@/src/components/ui/Footer/Footer";
 import { useAdvisors } from "@/src/hooks/useAdvisors";
 import { useState, useMemo } from "react";
 import { CATEGORIES_CONFIG } from '@/src/config/categories';
@@ -101,8 +102,8 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <main className={styles.bgr}> 
+      <main className={styles.main}> 
+        <div className={styles.bgr}>
         <Navbar />
         <div className={styles.description}>
           <h1>Meet our Travel Advisors and find your perfect match!</h1>
@@ -141,13 +142,8 @@ export default function Home() {
                 ) : (
                   filteredAdvisors.map((advisor: Advisor) => (
                     <AdvisorCard 
-                      key={advisor.id} 
-                      advisor={advisor}
-                      selectedFilters={{
-                        beachResorts: selectedBeachResorts,
-                        cruises: selectedCruises,
-                        themeParks: selectedThemeParks
-                      }}
+                    key={advisor.id} 
+                    advisor={advisor}
                     />
                   ))
                 )}
@@ -155,8 +151,7 @@ export default function Home() {
             )}
           </div>
         </div>
+            </div>
       </main>
-      <footer></footer>
-    </div>
   );
 }
