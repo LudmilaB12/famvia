@@ -12,6 +12,7 @@
     color: $color-text;
     width: 30%;
     border: 5px solid white;
+    max-width: 350px;
 
     &:hover {
         transform: translateY(-4px);

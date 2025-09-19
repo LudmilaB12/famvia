@@ -7,11 +7,6 @@ import { MapPin } from 'lucide-react';
 
 interface AdvisorCardProps {
     advisor: Advisor;
-    selectedFilters: {
-        beachResorts: string[];
-        cruises: string[];
-        themeParks: string[];
-    };
 }
 
 type DestinationWithCategory = {
@@ -20,25 +15,16 @@ type DestinationWithCategory = {
     isHighlighted: boolean;
 };
 
-export const AdvisorCard: React.FC<AdvisorCardProps> = ({ advisor, selectedFilters }) => {
-    // Función para obtener todas las destinations con su categoría y si están resaltadas
+export const AdvisorCard: React.FC<AdvisorCardProps> = ({ advisor }) => {
     const getDestinations = (): DestinationWithCategory[] => {
         // Primero, recolectamos todas las destinations con su información
         const allDestinations = advisor.specialties.flatMap(specialty =>
             specialty.destinations.map(destination => ({
                 destination,
-                category: specialty.category as 'beachResorts' | 'cruises' | 'themeParks',
-                isHighlighted: selectedFilters[specialty.category as keyof typeof selectedFilters]
-                    .some(filter => destination.toLowerCase().includes(filter.toLowerCase()))
+                category: specialty.category as 'beachResorts' | 'cruises' | 'themeParks'
             }))
         );
-
-        // Ordenamos para poner primero las destacadas
-        return allDestinations.sort((a, b) => {
-            if (a.isHighlighted && !b.isHighlighted) return -1;
-            if (!a.isHighlighted && b.isHighlighted) return 1;
-            return 0;
-        });
+        return allDestinations;
     };
 
     const destinations = getDestinations();

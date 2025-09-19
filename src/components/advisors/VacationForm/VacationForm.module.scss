@@ -1,0 +1,245 @@
+@import '../../../styles/variables';
+
+.vacationForm {
+    background: $color-bg;
+    border-radius: $border-radius;
+    padding: 28px;
+    box-shadow: $box-shadow-container;
+
+    .header {
+        margin-bottom: $spacing-sm;
+
+        h2 {
+            font-size: $font-size-xl;
+            color: $blue-950;
+            font-weight: $font-weight-bold;
+            margin-bottom: $spacing-xs;
+            display: flex;
+            align-items: center;
+            gap: $spacing-xs;
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            color: $color-text-light;
+            font-size: $font-size-base;
+        }
+    }
+
+    .formSection {
+        margin-bottom: $spacing-lg;
+
+        h3 {
+            color: $blue-950;
+            font-size: $font-size-lg;
+            font-weight: $font-weight-bold;
+            margin-bottom: $spacing-md;
+        }
+    }
+
+    .formGrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: $spacing-md;
+        margin-bottom: $spacing-md;
+    }
+
+    .fullWidth {
+        grid-column: 1 / -1;
+    }
+ 
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xs;
+
+        label {
+            color: $blue-950;
+            font-weight: $font-weight-medium;
+            font-size: $font-size-base;
+        }
+
+        input, select {
+            width: 100%;
+            min-width: 0;
+            max-width: 520px;
+            padding: 12px;
+            border: 1px solid $color-border;
+            border-radius: $border-radius-sm;
+            font-size: $font-size-base;
+            color: $blue-950;
+            background: $color-bg;
+            transition: all 0.2s ease;
+
+            &::placeholder {
+                color: lighten($color-text-light, 20%);
+            }
+
+            &:focus {
+                outline: none;
+                border-color: $blue-300;
+                box-shadow: 0 0 0 3px rgba($blue-300, 0.2);
+            }
+        }
+
+        select[name="destination"] {
+            width: 95.6% !important;
+            min-width: auto !important;
+            max-width: none !important;
+            box-sizing: border-box;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+            cursor: pointer;
+
+            &:focus {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230EA5E9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            }
+
+            optgroup {
+                font-weight: $font-weight-bold;
+                color: $blue-950;
+                background-color: $color-bg;
+            }
+
+            option {
+                padding: 8px;
+                color: $blue-950;
+                background-color: white;
+
+                &:hover {
+                    background-color: $color-secondary;
+                }
+            }
+        }
+
+        .global {
+            .react-datepicker-wrapper {
+                width: 95.6%;
+            }
+
+            .react-datepicker__input-container input {
+                width: 100%;
+                cursor: pointer;
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M8 2v3M16 2v3M3 8h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z'/%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                background-size: 1.2em;
+            }
+
+            .react-datepicker {
+                font-family: inherit;
+                border: 1px solid $color-border;
+                border-radius: $border-radius-sm;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                
+                &__header {
+                    background: white;
+                    border-radius: $border-radius-sm $border-radius-sm 0 0;
+                    padding-top: 1rem;
+                }
+
+                &__navigation {
+                    top: 1rem;
+
+                    &-icon::before {
+                        border-color: $blue-950;
+                    }
+
+                    &:hover *::before {
+                        border-color: $blue-300;
+                    }
+                }
+
+                &__current-month {
+                    color: $blue-950;
+                    font-weight: $font-weight-medium;
+                    font-size: 1rem;
+                }
+
+                &__day-name {
+                    color: $color-text-light;
+                    font-weight: $font-weight-medium;
+                    margin-top: 0.5rem;
+                }
+
+                &__day {
+                    color: $blue-950;
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    line-height: 2rem;
+                    margin: 0.2rem;
+
+                    &:hover {
+                        background-color: $color-secondary;
+                    }
+
+                    &--selected {
+                        background-color: $blue-300 !important;
+                        color: white !important;
+                        font-weight: $font-weight-medium;
+                    }
+
+                    &--keyboard-selected {
+                        background-color: $blue-200;
+                    }
+
+                    &--disabled {
+                        color: $color-text-light;
+                        text-decoration: line-through;
+                    }
+
+                    &--today {
+                        font-weight: bold;
+                        color: $blue-300;
+                    }
+                }
+
+                &__month-container {
+                    background: white;
+                }
+            }
+        }
+
+        input[type="number"] {
+            appearance: textfield;
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            width: 100%;
+        }
+    }
+
+    .error {
+        color: #ef4444;
+        font-size: $font-size-sm;
+        margin-top: 2px;
+    }
+
+    .submitButton {
+        background-color: $color-primary;
+        color: white;
+        font-weight: $font-weight-medium;
+        padding: 14px 32px;
+        border-radius: $border-radius-full;
+        border: none;
+        cursor: pointer;
+        font-size: $font-size-base;
+        transition: all 0.2s ease;
+        width: fit-content;
+
+        &:hover {
+            background-color: darken($color-primary, 5%);
+            transform: translateY(-1px);
+        }
+    }
+}

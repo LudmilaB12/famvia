@@ -1,0 +1,99 @@
+@import '../../../styles/variables';
+
+.joinTeamSection {
+    margin: 6rem auto;
+    background-image: url('/bgr.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    max-width: 1600px;
+
+
+}
+
+.joinTeamContent {
+    position: relative;
+    border-radius: $border-radius;
+    padding: 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    height: 400px;
+    
+    h1 {
+        font-size: 2.5rem;
+        color: $blue-950;
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacing-sm;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: $font-size-lg;
+        color: $color-text;
+        margin-bottom: $spacing-lg;
+        max-width: 600px;
+        margin-right: auto;
+
+        span {
+            color: $blue-950;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    .visitButton {
+        display: inline-flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: $blue-950;
+        color: white;
+        font-weight: $font-weight-medium;
+        border-radius: $border-radius-full;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba($blue-950, 0.2);
+        }
+    }
+
+        .decorativeImage {
+            z-index: 0;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 0;
+        }
+
+    .vacationLabLogo {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        height: 40px;
+    }
+}
+
+// Media queries para responsividad
+@media (max-width: 768px) {
+    .joinTeamSection {
+        margin: 3rem 0;
+        padding: 0 $spacing-sm;
+    }
+
+    .joinTeamContent {
+        padding: 2rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .decorativeImage {
+            width: 200px;
+        }
+    }
+}

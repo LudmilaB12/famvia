@@ -7,6 +7,7 @@ interface UseAdvisorsReturn {
     isLoading: boolean;
     error: Error | null;
     getAdvisorById: (id: string) => Advisor | undefined;
+    getRandomAdvisors: (excludeId?: string, limit?: number) => Advisor[];
 }
 
 export const useAdvisors = (): UseAdvisorsReturn => {
@@ -16,8 +17,6 @@ export const useAdvisors = (): UseAdvisorsReturn => {
 
     useEffect(() => {
         try {
-            // Simulamos una carga asíncrona
-            // En un caso real, aquí harías el fetch a tu API
             setTimeout(() => {
                 setAdvisors(advisorsData);
                 setIsLoading(false);
@@ -32,10 +31,21 @@ export const useAdvisors = (): UseAdvisorsReturn => {
         return advisors.find(advisor => advisor.id === id);
     };
 
+    const getRandomAdvisors = (excludeId?: string, limit: number = 3): Advisor[] => {
+        const filteredAdvisors = excludeId 
+            ? advisors.filter(advisor => advisor.id !== excludeId)
+            : [...advisors];
+        
+        return filteredAdvisors
+            .sort(() => Math.random() - 0.5)
+            .slice(0, limit);
+    };
+
     return {
         advisors,
         isLoading,
         error,
-        getAdvisorById
+        getAdvisorById,
+        getRandomAdvisors
     };
 };

@@ -1,0 +1,137 @@
+@import '../../../styles/variables';
+
+.footer {
+    position: relative;
+    color: white;
+    padding-top: 120px;
+    width: 100%;
+    margin-top: auto; // Esto empujará el footer al final
+    overflow: hidden; // Para manejar la onda decorativa
+}
+
+.wave {
+    position: absolute;
+    top: -2px; // Ajusta esto si ves un pequeño espacio
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.footerContent {
+    padding: 0 2rem 3rem;
+    background-color: $blue-950;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footerColumns {
+    display: flex;
+    justify-content: flex-end;
+    gap: $spacing-xl * 2;
+    margin-bottom: 8rem;
+}
+
+.column {
+    h3 {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacing-md;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: $spacing-sm;
+
+            a {
+                color: white;
+                text-decoration: none;
+                transition: opacity 0.2s ease;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $spacing-xl;
+    text-align: center;
+
+    .logo {
+        margin-bottom: $spacing-md;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.contactInfo {
+    margin-bottom: $spacing-md;
+
+    p {
+        margin-bottom: $spacing-sm;
+        font-weight: $font-weight-medium;
+    }
+}
+
+.socialLinks {
+    display: flex;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-md;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: $border-radius-full;
+        background: rgba(white, 0.1);
+        transition: all 0.2s ease;
+
+        img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+            background: rgba(white, 0.2);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.copyright {
+    color: rgba(white, 0.7);
+    font-size: $font-size-sm;
+}
+
+// Media queries para responsividad
+@media (max-width: 768px) {
+    .footerColumns {
+        flex-direction: column;
+        gap: $spacing-xl;
+    }
+
+    .footer {
+        padding-top: 80px;
+        margin-top: 40px;
+    }
+}
