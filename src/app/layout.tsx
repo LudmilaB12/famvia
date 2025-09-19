@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Footer from "@/src/components/ui/Footer/Footer";
+import Navbar from "@/src/components/ui/Navbar/Navbar";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -29,6 +30,7 @@ export default function RootLayout({
         minHeight: '100vh',
         margin: 0
       }}>
+        <Navbar />
         <main style={{ flex: '1 0 auto' }}>
           {children}
         </main>

@@ -310,5 +310,253 @@ export const advisors: Advisor[] = [
                 }
             ]
         }
+    },
+    {
+        id: '6',
+        firstName: 'Sofia',
+        lastName: 'Patel',
+        fullName: 'Sofia Patel',
+        location: {
+            country: 'United Kingdom',
+            city: 'London'
+        },
+        image: {
+            url: '/images/advisors/sofia-patel.jpeg',
+            alt: 'Sofia Patel - Travel Advisor'
+        },
+        specialties: [
+            {
+                category: 'themeParks',
+                destinations: ['Disneyland Paris', 'Europa Park', 'LEGOLAND'],
+                experienceYears: 6
+            },
+            {
+                category: 'cruises',
+                destinations: ['Royal Caribbean International', 'MSC Cruises', 'Celebrity Cruise Line'],
+                experienceYears: 4
+            }
+        ],
+        languages: ['English', 'Hindi', 'French'],
+        bio: 'European family travel expert specializing in theme parks and Mediterranean cruises.',
+        profile: {
+            aboutMe: 'With my multicultural background and extensive travels across Europe, I bring a unique perspective to family vacation planning. My passion lies in helping families discover the perfect blend of cultural experiences and entertainment.',
+            whyILoveBeingTravelAgent: 'Creating itineraries that allow families to experience both the magical world of theme parks and the rich cultural heritage of Europe brings me immense satisfaction. Every trip is an opportunity to create lasting memories.',
+            topTravelSecret: 'Book Disneyland Paris for late January. The crowds are minimal, prices are lower, and the park has a special winter charm that many miss!',
+            favoriteDestinations: [
+                'Disneyland Paris',
+                'Mediterranean Coast',
+                'British Theme Parks',
+                'Greek Islands'
+            ],
+            favoriteVacationImage: {
+                url: '/images/vacation-memories/james-disney-california.jpeg',
+                alt: 'Sofia at Disneyland Paris',
+                description: 'Experiencing the magic of Disneyland Paris during its 30th anniversary celebration.'
+            },
+            favoriteVacationMemory: 'My most memorable experience was organizing a surprise multi-generational family trip to Disneyland Paris. Three generations, five different countries, all coming together for a magical week. The grandparents relived their youth, and the children experienced the magic for the first time. Pure joy!',
+            vacationMemories: [
+                {
+                    url: '/images/vacation-memories/sofia-greek-cruise.jpeg',
+                    alt: 'Mediterranean Cruise',
+                    description: 'Sunset sailing in the Mediterranean'
+                },
+                {
+                    url: '/images/vacation-memories/sofia-legoland.jpeg',
+                    alt: 'LEGOLAND Windsor',
+                    description: 'Fun day at LEGOLAND Windsor'
+                },
+                {
+                    url: '/images/vacation-memories/sofia-europa.jpeg',
+                    alt: 'Europa Park adventures',
+                    description: 'Exploring the wonders of Europa Park'
+                }
+            ]
+        }
+    },
+    {
+        id: '7',
+        firstName: 'Carlos',
+        lastName: 'Ruiz',
+        fullName: 'Carlos Ruiz',
+        location: {
+            country: 'Mexico',
+            city: 'Cancun'
+        },
+        image: {
+            url: '/images/advisors/carlos-ruiz.jpeg',
+            alt: 'Carlos Ruiz - Travel Advisor'
+        },
+        specialties: [
+            {
+                category: 'beachResorts',
+                destinations: ['Cancun Resorts', 'Riviera Maya', 'Los Cabos'],
+                experienceYears: 10
+            },
+            {
+                category: 'cruises',
+                destinations: ['Carnival Cruise Line', 'Norwegian Cruise Line', 'Royal Caribbean International'],
+                experienceYears: 5
+            }
+        ],
+        languages: ['Spanish', 'English'],
+        bio: 'Caribbean and Mexico resort specialist with extensive local knowledge.',
+        profile: {
+            aboutMe: 'Born and raised in Cancun, I have an intimate knowledge of Mexico\'s best resorts and hidden gems. My decade of experience in luxury resorts helps me create unforgettable beach vacations.',
+            whyILoveBeingTravelAgent: 'I love sharing the beauty and warmth of my homeland with visitors, helping them discover not just the beaches, but the rich culture and hospitality of Mexico.',
+            topTravelSecret: 'Visit Riviera Maya in May - perfect weather, fewer crowds, and you might catch the sea turtle nesting season!',
+            favoriteDestinations: [
+                'Cancun',
+                'Tulum',
+                'Los Cabos',
+                'Caribbean Islands'
+            ],
+            favoriteVacationImage: {
+                url: '/images/vacation-memories/carlos-tulum.jpeg',
+                alt: 'Carlos at Tulum ruins',
+                description: 'Sharing the ancient wonders of Tulum with visitors.'
+            },
+            favoriteVacationMemory: 'One of my most treasured memories was guiding a family through their first snorkeling experience in a secluded cenote. The look of wonder on their faces as they discovered the underwater world, followed by an authentic Mayan lunch prepared by local families, created a perfect blend of adventure and cultural immersion.',
+            vacationMemories: [
+                {
+                    url: '/images/vacation-memories/carlos-beach.jpeg',
+                    alt: 'Pristine Mexican beach',
+                    description: 'Perfect day at a hidden beach in Los Cabos'
+                },
+                {
+                    url: '/images/vacation-memories/carlos-cruise.jpeg',
+                    alt: 'Caribbean cruise experience',
+                    description: 'Exploring the Caribbean by sea'
+                },
+                {
+                    url: '/images/vacation-memories/carlos-cenote.jpeg',
+                    alt: 'Swimming in cenote',
+                    description: 'Adventure at a secret cenote'
+                }
+            ]
+        }
+    },
+    {
+        id: '8',
+        firstName: 'Maya',
+        lastName: 'Wong',
+        fullName: 'Maya Wong',
+        location: {
+            country: 'Singapore',
+            city: 'Singapore'
+        },
+        image: {
+            url: '/images/advisors/maya-wong.jpeg',
+            alt: 'Maya Wong - Travel Advisor'
+        },
+        specialties: [
+            {
+                category: 'themeParks',
+                destinations: ['Universal Studios Singapore', 'Tokyo Disneyland', 'Hong Kong Disneyland'],
+                experienceYears: 7
+            },
+            {
+                category: 'beachResorts',
+                destinations: ['Bali Resorts', 'Thailand Resorts', 'Maldives Resorts'],
+                experienceYears: 5
+            }
+        ],
+        languages: ['English', 'Mandarin', 'Malay'],
+        bio: 'Asian theme parks and luxury resort specialist with expertise in family-friendly destinations.',
+        profile: {
+            aboutMe: 'Based in Singapore, I specialize in creating perfect Asian getaways that combine theme park excitement with luxury resort relaxation. My knowledge of Asian cultures and destinations helps families navigate and enjoy the best of both worlds.',
+            whyILoveBeingTravelAgent: 'Helping families discover the unique charm of Asian theme parks and resorts, while ensuring they experience authentic local culture and traditions.',
+            topTravelSecret: 'Visit Tokyo Disneyland during early December - you\'ll experience the magical Christmas decorations with smaller crowds than peak season!',
+            favoriteDestinations: [
+                'Tokyo Disney Resort',
+                'Sentosa Island',
+                'Bali',
+                'Phuket'
+            ],
+            favoriteVacationImage: {
+                url: '/images/vacation-memories/maya-tokyo.jpeg',
+                alt: 'Maya at Tokyo Disneyland',
+                description: 'Creating magical moments at Tokyo Disneyland.'
+            },
+            favoriteVacationMemory: 'My most unforgettable experience was helping a family with a child on the autism spectrum enjoy their first theme park visit at Tokyo DisneySea. We carefully planned every detail, used the disability access services, and created a sensory-friendly itinerary. Seeing their joy and relief as they experienced the park comfortably was incredibly rewarding.',
+            vacationMemories: [
+                {
+                    url: '/images/vacation-memories/maya-bali.jpeg',
+                    alt: 'Luxury resort in Bali',
+                    description: 'Sunset at a luxury Bali resort'
+                },
+                {
+                    url: '/images/vacation-memories/maya-sentosa.jpeg',
+                    alt: 'Universal Studios Singapore',
+                    description: 'Fun at Universal Studios Singapore'
+                },
+                {
+                    url: '/images/vacation-memories/maya-phuket.jpeg',
+                    alt: 'Thailand beach resort',
+                    description: 'Paradise found in Phuket'
+                }
+            ]
+        }
+    },
+    {
+        id: '9',
+        firstName: 'Liam',
+        lastName: 'O\'Connor',
+        fullName: 'Liam O\'Connor',
+        location: {
+            country: 'Ireland',
+            city: 'Dublin'
+        },
+        image: {
+            url: '/images/advisors/liam-oconnor.jpeg',
+            alt: 'Liam O\'Connor - Travel Advisor'
+        },
+        specialties: [
+            {
+                category: 'cruises',
+                destinations: ['Viking Cruises', 'AMA Waterways', 'Cunard Line'],
+                experienceYears: 12
+            },
+            {
+                category: 'themeParks',
+                destinations: ['Disneyland Paris', 'Europa Park', 'Alton Towers'],
+                experienceYears: 4
+            }
+        ],
+        languages: ['English', 'Irish'],
+        bio: 'European river cruise expert and family adventure specialist.',
+        profile: {
+            aboutMe: 'With over a decade of experience in luxury river cruising and European travel, I specialize in creating immersive family adventures that blend cultural experiences with entertainment.',
+            whyILoveBeingTravelAgent: 'Nothing beats the feeling of helping families discover the magic of Europe, whether it\'s their first river cruise or their annual theme park adventure.',
+            topTravelSecret: 'Book a Christmas Market river cruise for early December instead of late December - better weather, fewer crowds, and all the festive charm!',
+            favoriteDestinations: [
+                'Rhine River Valley',
+                'Scottish Highlands',
+                'Paris',
+                'Lake Como'
+            ],
+            favoriteVacationImage: {
+                url: '/images/vacation-memories/liam-river.jpeg',
+                alt: 'Liam on a river cruise',
+                description: 'Experiencing the magic of a Rhine River cruise.'
+            },
+            favoriteVacationMemory: 'During a Christmas Market river cruise, I arranged for a family to have a private cooking class with a local chef in a medieval castle along the Rhine. Together, they learned to make traditional German Christmas cookies while snow fell outside the castle windows. The evening ended with carols and Glühwein by the fireplace - pure magic!',
+            vacationMemories: [
+                {
+                    url: '/images/vacation-memories/liam-paris.jpeg',
+                    alt: 'Paris adventures',
+                    description: 'Magical evening in Paris'
+                },
+                {
+                    url: '/images/vacation-memories/liam-alton.jpeg',
+                    alt: 'Alton Towers theme park',
+                    description: 'Thrills at Alton Towers'
+                },
+                {
+                    url: '/images/vacation-memories/liam-scotland.jpeg',
+                    alt: 'Scottish Highlands tour',
+                    description: 'Exploring the Scottish Highlands'
+                }
+            ]
+        }
     }
 ];

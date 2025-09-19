@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import styles from "./page.module.scss";
 import { Facebook, Instagram, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
-import Navbar from "@/src/components/ui/Navbar/Navbar";
+import Loader from "@/src/components/ui/Loader/Loader";
 import VacationForm from "@/src/components/advisors/VacationForm/VacationForm";
 import AdvisorsList from "@/src/components/advisors/AdvisorsList/AdvisorsList";
 import JoinTeam from "@/src/components/ui/JoinTeam/JoinTeam";
@@ -26,14 +26,12 @@ export default function AdvisorPage({ params: { id } }: AdvisorPageProps) {
     }
   };
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loader />;
   if (error) return <div>Error: {error.message}</div>;
   if (!advisor) return notFound();
 
   return (
     <div>
-
-      <Navbar />
     <div className={styles.advisorProfile}>
       <div className={styles.banner}>
         <img

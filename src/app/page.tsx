@@ -102,7 +102,6 @@ export default function Home() {
   return (
       <main className={styles.main}> 
         <div className={styles.bgr}>
-        <Navbar />
         <div className={styles.description}>
           <h1>Meet our Travel Advisors and find your perfect match!</h1>
           <h3>Ready to actually enjoy your next family vacation?</h3>
